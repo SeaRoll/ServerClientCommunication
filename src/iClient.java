@@ -5,12 +5,12 @@ import java.net.Socket;
  * Created by Yohan on 3/25/2017.
  */
 public class iClient {
-    String serverName = "127.0.0.1"; //IP
+    private String serverName = "127.0.0.1"; //IP
     int port = 0; //PORT
-    Socket client;
+    private Socket client;
 
-    public iClient (int porty) {
-        port = porty;
+    public iClient (int Port) {
+        port = Port;
 
         try {
             System.out.println("Connecting to " + serverName + " on port " + port);
